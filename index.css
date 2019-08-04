@@ -12,6 +12,7 @@ body {
 input {
     max-width: 100%;
     margin-top: 15px;
+    border-color: #ff0000;
 }
 .project_title {
     text-align: center;
