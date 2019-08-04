@@ -1,0 +1,170 @@
+body * {
+    font-family: cursive;
+    font-size: 1.6rem;
+    outline: none;
+    margin: 0;
+}
+body {
+    background: url(images/lightning_bolts.png);
+    background-position: center;
+    margin: 0;
+}
+input {
+    max-width: 100%;
+    margin-top: 15px;
+}
+.project_title {
+    text-align: center;
+    font-size: 2rem;
+}
+
+#main_project {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section_1 {
+    background: rgba(255,255,255,.5);
+    border: 2px solid rgba(247, 202, 24, 1);
+    border-radius: 10px;
+
+    max-width: 100%;
+    width: 500px;
+}
+.section_2 {
+    background: rgba(255,255,255,.5);
+    border: 2px solid rgba(247, 202, 24, 1);
+    border-radius: 10px;
+
+    max-width: 100%;
+    width: 800px;
+}
+.section_2 input {
+    background: rgba(255,255,255,.5);
+    text-align: center;
+    color: #ff0000;
+    font-size: 1.5rem !important;
+}
+.section_2 .info_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.section_2 .preset_kwh_number {
+    color: #ff0000;
+    font-size: 2rem !important;
+}
+
+/* Images */
+.car {
+    display: none;
+}
+.tree {
+    display: none;
+}
+.gas {
+    display: none;
+}
+.what_is_saved p{
+    height: 200px;
+    width: 500px;
+
+    margin: 50% auto;
+}
+.what_is_saved img {
+    max-width: 100%;
+    width: 200px;
+    max-height: 100%;
+    height: 200px;
+    animation: delay 2.5s;
+    animation: If_I_won_the_award_for_laziness_I_would_send_someone_to_pick_it_up_for_me 2s ease-in-out;
+}
+@keyframes If_I_won_the_award_for_laziness_I_would_send_someone_to_pick_it_up_for_me {
+    0% {
+      transform: translateX(0);
+    }
+  
+    20% {
+      transform: translateX(-10px);
+    }
+  
+    40% {
+      transform: translateX(10px);
+    }
+  
+    60% {
+      transform: translateX(-10px);
+    }
+  
+    80% {
+      transform: translateX(10px);
+    }
+  
+    100% {
+      transform: translateX(0);
+    }
+  }
+/* The Buttons */
+.saved_buttons button{
+    border: 2px solid #000;
+    border-radius: 50%;
+    padding: 20px;
+    font-size: 1.2rem;
+    background: #ff0000;
+}
+.saved_buttons button:hover {
+    cursor: pointer;
+    background: rgba(247, 202, 24, 1);
+}
+
+.saved_content {
+    margin-bottom: 100px;
+    height: 15px;
+}
+
+.saved_visual * {
+    font-size: 3rem !important;
+}
+.saved_visual span {
+    font-size: 4.5rem !important;
+    color: #ff0000;
+    animation: I_wonder_how_police_on_bikes_arrest_people____ALRIGHT_GET_IN_THE_BASKET  1.5s ease-in-out infinite;
+
+}
+@keyframes I_wonder_how_police_on_bikes_arrest_people____ALRIGHT_GET_IN_THE_BASKET {
+    0% {
+      text-shadow:  0 0 10px #fff;
+    }
+    
+    15% {
+      text-shadow: 2px 2px 10px rgba(242, 38, 19, 1),
+                   -2px -2px 10px rgba(242, 38, 19, 1);
+    }
+    30% {
+      text-shadow: 2px 2px 4px rgba(242, 38, 19, .7),
+                   -2px -2px 4px rgba(242, 38, 19, .7);
+    }
+    50% {
+      text-shadow: 20px 20px 50px rgba(242, 38, 19, .5),
+                   -20px -20px 50px rgba(242, 38, 19, .5);
+    }
+  }
+
+  /* Media Queries */
+@media(max-width: 900px) {
+    .section_1 {
+        padding-bottom: 15px;
+        display: none;
+    }
+    .saved_buttons button{
+        padding: 15px;
+        font-size: 1rem;
+    }
+    input {
+        width: 90%;
+    }
+}

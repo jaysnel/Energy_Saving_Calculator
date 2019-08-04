@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Energy Savings Calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+        <h1 class="project_title">Energy Saved. World A Better Place.</h1>
+
+    <section id="main_project">
+
+    <section class="section_1">
+    <!-- Images Of The Item Saved -->
+    <section class="what_is_saved">
+        <p>
+            <img class="lightbulb" src="images/innovation.png">
+            <img class="car" src="images/car.png">
+            <img class="tree" src="images/trees.png">
+            <img class="gas" src="images/co2.png">
+        </p>
+    </section>
+</section>
+
+
+
+
+    <section class="section_2">
+    <section class="info_section">
+            <span>
+                <!-- <span class="preset_kwh_number">{{ randomKWHNumber }}</span> -->
+                <input v-model="initialInput" placeholder="Insert Last Month KWH">
+                <br/>
+                <br/>
+                KWH Of Energy<br/>Used Last Month
+            </span>
+            <br/>
+            <span>
+                <input v-model="userInput" placeholder="Insert This Month KWH">
+                <br/>
+                <br/>KWH Of Enery Used This Month
+                <br/>
+                <section class="saved_buttons">
+                        <span class="car_button">
+                            <button v-on:click="theCarContent(userInput)" href="#">{{ car_button }}</button>
+                        </span>
+                            
+                        <span class="tree_button">
+                                <button  v-on:click="theTreeContent(userInput)" href="#">{{ tree_button }}</button>
+                            </span>
+                    
+                        <span class="gas_button">
+                                <button  v-on:click="theGasContent(userInput)" href="#">{{ gas_button }}</button>
+                        </span>
+                </section>
+            </span>
+            </section>
+            
+
+    <!--Content Of What Is Saved -->
+    <section class="saved_content">
+            <p>
+                    {{ car_content }}
+                    {{ tree_content }}
+                    {{ gas_content }}
+            </p>
+    </section>
+
+
+    <!-- Showing Of What Is Saved --> 
+    <section class="saved_visual">
+            <p>
+                You saved
+                <br/>
+                <span>{{ savingsPercent }}</span>
+                <br/>
+                more energy this month!
+            </p>
+    </section>
+
+</section>
+
+
+
+    </section>
+    <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="index.js"></script>
+</body>
+</html>
