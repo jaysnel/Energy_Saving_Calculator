@@ -156,10 +156,20 @@ input {
   }
 
   /* Media Queries */
+  @media(max-width: 1320px) and (min-width:900px) {
+    .section_1 {
+        padding-bottom: 15px;
+        display: none;
+    }
+}
+
 @media(max-width: 900px) {
     .section_1 {
         padding-bottom: 15px;
         display: none;
+    }
+     .section_2  * {
+        font-size: 1.2rem !important;
     }
     .saved_buttons button{
         padding: 15px;
