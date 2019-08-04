@@ -18,10 +18,6 @@ let energySavedProject =  new Vue({
         car_content: null,
         tree_content: null,
         gas_content: null,
-        // Visual Variables
-        car_content_visual: "",
-        tree_content_visual: "",
-        gas_content_visual: "",
         // AVG KWH For Each Item (Totally Made Up Figures)
         avgCarKWHPerMonth: 333,
         avgTreeKWHPerMonth: 50,
